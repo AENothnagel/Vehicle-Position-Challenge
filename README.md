@@ -1,3 +1,9 @@
+# Solution
+I have not changed the Make file, since I was working on a Windows PC and not running Make. I have made some changes to the solution.c file, adding the code to time the execution of the main file, and a structure variable to hold the data of the cars in the .dat file. I have not progressed further with the solution.
+
+I think however, that a good solution for this problem would be to sort the data into a 2-dimensional K-D tree, alternating dividing the XY plane by the X and Y axis respectively. By then performing the closest point search for each of the 10 given points, the solution each time can be solved with much less complexity than the brute force method of checking every point. Another method that can make a small difference, is every time the cartesian distance is calculated by add the squares of the X and Y distance and taking the square root of this sum, one can ommit taking the square root and still get the same answer of which point is closest.
+
+
 # Vehicle Position Challenge
 
 ## Task
@@ -52,4 +58,3 @@ Position  |1          | 2        | 3         | 4        | 5        | 6         |
 Latitude  |34.544909  |32.345544 |33.234235  |35.195739 |31.895839 |32.895839  |34.115839  |32.335839 |33.535339 |32.234235
 Longitude |-102.100843|-99.123124|-100.214124|-95.348899|-97.789573|-101.789573|-100.225732|-99.992232|-94.792232|-100.222222
 
-# Solution
